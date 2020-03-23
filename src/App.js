@@ -1,8 +1,22 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import Wheel from './components/Wheel'
+import Hex from './components/Hex'
 
-const App = () => {
-  return <HelloWorld />
+class App extends React.Component {
+  // state = {
+  //   displayColor: '',
+  //   colorHue: this.props.initialDisplayedHue,
+  //   hueInputBox: '',
+  //   colorSaturation: this.props.initialDisplayedSat,
+  //   colorLightness: this.props.light,
+  // }
+
+  render() {
+    return (
+      <>
+        <Wheel />
+      </>
+    )
+  }
 }
-
 export default App
